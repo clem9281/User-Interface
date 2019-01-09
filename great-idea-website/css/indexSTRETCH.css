@@ -84,12 +84,12 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -104,45 +104,45 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+	display: block;
 }
 
 body {
-    line-height: 1;
+	line-height: 1;
 }
 
 ol,
 ul {
-    list-style: none;
+	list-style: none;
 }
 
 blockquote,
 q {
-    quotes: none;
+	quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: '';
-    content: none;
+	content: '';
+	content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html,
 body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
 }
 
 h1,
@@ -150,100 +150,118 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
 }
 
 /* Your code starts here! */
 
-/* NAVIGATION */
+/* position these sections to handle the fact that the navbar is fixed */
 
-nav div,
-nav figure {
-    display: inline-block;
-    margin-top: 30px;
-
+header,
+section,
+address,
+figure.row,
+footer {
+	position: relative;
+	top: 90px;
 }
 
-nav div {
-    width: 79%;
-    height: 100%;
+/* NAVIGATION */
+nav {
+	height: 90px;
+	width: 100%;
+	background-color: #968d8d;
+	padding-bottom: 30px;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+}
+
+nav .row div,
+nav .row figure {
+	display: inline-block;
+	margin-top: 30px;
+}
+
+nav .row div {
+	width: 79%;
 }
 
 nav div a {
-    display: inline-block;
-    color: grey;
-    text-decoration: none;
-    margin-right: 8%;
+	display: inline-block;
+	color: black;
+	text-decoration: none;
+	margin-right: 8%;
 }
 
 /* LOGO */
 
 nav figure {
-    width: 19%;
+	width: 19%;
 }
 
 nav figure img {
-    margin-left: 8%;
-    vertical-align: middle;
+	margin-left: 8%;
+	vertical-align: middle;
 }
 
 
 /* ROWS AND COLUMNS */
 
 .row {
-    width: 90%;
-    margin: 0 auto;
+	width: 90%;
+	margin: 0 auto;
 }
 
 .container {
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 .half-column {
-    display: inline-block;
-    height: 100%;
-    width: 49%;
+	display: inline-block;
+	height: 100%;
+	width: 49%;
 }
 
 .third-column {
-    display: inline-block;
-    height: 100%;
-    width: 33%;
+	display: inline-block;
+	height: 100%;
+	width: 33%;
 }
 
 /* HEADER */
 
 header.row {
-    margin: 70px auto 50px;
-    border-bottom: 1px solid black;
-    padding-bottom: 70px;
+	margin: 70px auto 50px;
+	border-bottom: 1px solid black;
+	padding-bottom: 70px;
 }
 
 header.row div.half-column {
-    margin-top: 50px;
-    vertical-align: top;
+	margin-top: 50px;
+	vertical-align: top;
 }
 
 header.row .half-column h1 {
-    font-size: 90px;
-    text-align: center;
-    line-height: 75%;
+	font-size: 90px;
+	text-align: center;
+	line-height: 75%;
 }
 
 header.row .half-column button {
-    background-color: white;
-    font-size: 15px;
-    color: black;
-    border: 1px solid black;
-    padding: 10px 60px;
-    display: block;
-    margin: 30px auto;
+	background-color: white;
+	font-size: 15px;
+	color: black;
+	border: 1px solid black;
+	padding: 10px 60px;
+	display: block;
+	margin: 30px auto;
 }
 
 header.row figure img {
-    margin-left: 25%;
+	margin-left: 25%;
 
 }
 
@@ -251,33 +269,33 @@ header.row figure img {
 section.row,
 figure.row,
 address.row {
-    margin-bottom: 40px;
+	margin-bottom: 40px;
 }
 
 /* IMAGE SECTION */
 
 figure.row img {
-    width: 100%;
+	width: 100%;
 }
 
 
 /* ADDRESS */
 /* a class to add a space to the top of two of the address elements */
 .top-space {
-    margin-top: 20px;
+	margin-top: 20px;
 }
 
 /* FOOTER */
 
 footer.row {
-    text-align: center;
+	text-align: center;
 }
 
 footer.row p {
-    margin: 80px 0;
+	margin: 80px 0;
 }
 
 /* just a class to add a space between certain columns*/
 .space {
-    padding-right: 20px;
+	padding-right: 20px;
 }
