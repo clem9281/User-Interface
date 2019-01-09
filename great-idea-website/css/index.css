@@ -205,7 +205,6 @@ nav figure img {
 	display: inline-block;
 	height: 100%;
 	width: 49%;
-	/* padding-right: 20px; */
 }
 
 .third-column {
@@ -263,9 +262,9 @@ figure.row img {
 
 
 /* ADDRESS */
-
-address p {
-	margin-bottom: 20px;
+/* a class to add a space to the top of two of the address elements */
+.top-space {
+	margin-top: 20px;
 }
 
 /* FOOTER */
