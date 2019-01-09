@@ -157,37 +157,42 @@ h5 {
 
 /* Your code starts here! */
 
-.nav-bar {
-	height: 66px;
-}
+/* NAVIGATION */
 
-.nav-bar div,
-.nav-bar figure {
+nav div,
+nav figure {
 	display: inline-block;
-	margin: 20px 0;
+	margin-top: 30px;
+
 }
 
-.nav-bar div {
-	width: 75%;
+nav div {
+	width: 79%;
 	height: 100%;
-	vertical-align: -webkit-baseline-middle;
 }
 
-.nav-bar figure {
-	width: 20%;
-}
-
-.nav-bar div a {
+nav div a {
 	display: inline-block;
-	margin: 5px 90px 0 10px;
-	vertical-align: middle;
 	color: grey;
 	text-decoration: none;
+	margin-right: 8%;
 }
 
-/* A row for the columns, and the columns themselves. When each column is given a width they start a new row because of a whitespace issue. That is the reason behind white-space: nowrap in row and white-space: normal in each of the columns. Vertical align middle keeps the divs from being all over the place when changed to inline-block */
+/* LOGO */
+
+nav figure {
+	width: 19%;
+}
+
+nav figure img {
+	margin-left: 8%;
+	vertical-align: middle;
+}
+
+
+/* ROWS AND COLUMNS */
+
 .row {
-	white-space: nowrap;
 	width: 90%;
 	margin: 0 auto;
 }
@@ -199,20 +204,17 @@ h5 {
 .half-column {
 	display: inline-block;
 	height: 100%;
-	width: 50%;
-	white-space: normal;
-	vertical-align: middle;
-	padding-right: 20px;
+	width: 49%;
+	/* padding-right: 20px; */
 }
 
 .third-column {
 	display: inline-block;
 	height: 100%;
-	width: 33.3%;
-	white-space: normal;
-	vertical-align: middle;
-	padding-right: 20px;
+	width: 33%;
 }
+
+/* HEADER */
 
 header.row {
 	margin: 70px auto 50px;
@@ -222,6 +224,7 @@ header.row {
 
 header.row div.half-column {
 	margin-top: 50px;
+	vertical-align: top;
 }
 
 header.row .half-column h1 {
@@ -241,24 +244,31 @@ header.row .half-column button {
 }
 
 header.row figure img {
-	display: block;
-	margin: 0 auto;
+	margin-left: 25%;
+
 }
 
-
+/* bottom margin for all three of the last sections */
 section.row,
 figure.row,
 address.row {
 	margin-bottom: 40px;
 }
 
+/* IMAGE SECTION */
+
 figure.row img {
 	width: 100%;
 }
 
-.margin-bottom {
+
+/* ADDRESS */
+
+address p {
 	margin-bottom: 20px;
 }
+
+/* FOOTER */
 
 footer.row {
 	text-align: center;
@@ -266,4 +276,9 @@ footer.row {
 
 footer.row p {
 	margin: 80px 0;
+}
+
+/* just a class to add a space between certain columns*/
+.space {
+	padding-right: 20px;
 }
